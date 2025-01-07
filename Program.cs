@@ -14,12 +14,12 @@ namespace MyProgram
         public static void Rules()
         {
             Console.WriteLine("Dice Game");
+ Console.WriteLine();
+            Console.WriteLine("In this game you and a computer Rival will play 10 rounds");
+            Console.WriteLine(" where you will each roll a 6-sided dice, and the player ");
+            Console.WriteLine("with the highest dice value will win the round. The player");
+            Console.WriteLine(" who wins the most rounds wins the game. Good luck!"  );
 
-            Console.WriteLine("In this game you and a computer Rival will play 10 rounds" + 
-            " where you will each roll a 6-sided dice, and the player " + 
-            "with the highest dice value will win the round. The player" + 
-            " who wins the most rounds wins the game. Good luck!"
-            );
             Console.WriteLine("Press any key to start...");
             Console.ReadKey();
         }
@@ -49,18 +49,18 @@ namespace MyProgram
                 {
                     Console.WriteLine("The Rival won this round");
                     Rival = Rival += 1;
-                    Console.WriteLine("The score is now you  : " + You + ". " + "Rival  :" + Rival + ".");
+                    Console.WriteLine("The score is now : " + You + ". " + "Rival  :" + Rival + ".");
                 }
                 else if (dice2 > dice)
                 {
                     Console.WriteLine("You won this round");
                     You = You += 1;
-                    Console.WriteLine("The score is now you  : " + You + ". " + "Rival  :" + Rival + ".");
+                    Console.WriteLine("The score is now   : " + You + ". " + "Rival  :" + Rival + ".");
                 }
                 else
                 {
                     Console.WriteLine("This game is a draw");
-                    Console.WriteLine("The score is now you  : " + You + ". " + "Rival  :" + Rival + ".");
+                    Console.WriteLine("The score is now   : " + You + ". " + "Rival  :" + Rival + ".");
                 }
 
             }
